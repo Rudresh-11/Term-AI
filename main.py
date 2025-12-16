@@ -1,7 +1,7 @@
 import os
 import sys
 from dotenv import load_dotenv
-load_dotenv("./.env")
+load_dotenv()
 import typer
 from rich.console import Console
 from rich.markdown import Markdown
