@@ -31,10 +31,10 @@ The user is running on a standard POSIX shell (Linux/macOS) or Windows. Adapt co
 """
 
 class Agent:
-    def __init__(self):
+    def __init__(self,model_name):
         # 2. OPTIMIZATION: Use 'gemini-2.0-flash' or 'gemini-1.5-flash' (usually cheaper/faster than 2.5)
         self.model = genai.GenerativeModel(
-            model_name='gemini-2.5-flash-lite', 
+            model_name=model_name, 
             tools=TOOLS_SCHEMA,
             system_instruction=SYSTEM_INSTRUCTION
         )
